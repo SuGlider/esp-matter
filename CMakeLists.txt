@@ -400,8 +400,7 @@ idf_component_register(SRC_DIRS          ${SRC_DIRS_LIST}
 
 target_compile_options(${COMPONENT_LIB} PUBLIC
                        "-DCHIP_ADDRESS_RESOLVE_IMPL_INCLUDE_HEADER=<lib/address_resolve/AddressResolve_DefaultImpl.h>"
-                       "-DCHIP_CONFIG_SOFTWARE_VERSION_NUMBER=${chip_config_software_version_number}"
-                       "-DNDEBUG")
+                       "-DCHIP_CONFIG_SOFTWARE_VERSION_NUMBER=${chip_config_software_version_number}")
 
 if (CHIP_PROJECT_CONFIG)
     target_compile_options(${COMPONENT_LIB} PUBLIC
